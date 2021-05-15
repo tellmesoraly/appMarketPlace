@@ -1,0 +1,34 @@
+.navbar {
+	background:#0c0a19;
+}
+
+
+
+.card img {
+	height: 200px;
+	object-fit: cover;
+}
+
+.disponibilidadArticulo {
+	position: absolute;
+	right: 0;
+	background: rgba(255, 255, 255, 0.7);
+	padding: 3px;
+}
+
+.disponible {
+	color: #17ad70;
+	font-weight: bold;
+}
+
+.agotado {
+	color: red;
+	font-weight: bold;
+}
+
+#btnIngresar, #btnRegistrar, #btnBuscar, #verDetalles, 
+#btnBuscar, #btnIngresarModal, #btnMenuDesplegable, 
+#btnCrearPublicacion, #btnCrearArticulo, #btnRegistrarModal{
+	background: #493c60;
+	color: white;
+}
