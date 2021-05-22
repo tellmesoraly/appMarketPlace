@@ -86,7 +86,7 @@
               </div>
               <div class="col-12 mt-2">
                 <label for="formFile" class="form-label">Seleccionar archivo (Archivos sólo JPG, PNG, JPEG)</label>
-                <input class="form-control" type="file" id="formFile">
+                <input class="form-control" type="file" id="formFile" name="imagen">
               </div>  
             </div>
             <div class="row mt-2">
@@ -94,6 +94,7 @@
                 <button type="submit" id="btnCrearArticulo" class="btn"> Guardar artículo</button>
               </div>
             </div>
+            <input type="hidden" value="<?php echo $_SESSION["idUsuario"]; ?>" name="idUsuario">
         </form>
       </div>
     </div>
@@ -132,15 +133,15 @@
            </div>
            <div class="row mt-3">
              <div class="col-md-12">
-               <label for="inputPassword4" class="form-label">Contraseña</label>
-               <input type="password" class="form-control" id="inputPassword4" required>
+               <label for="passwordUsuarioRegistrar" class="form-label">Contraseña</label>
+               <input type="password" class="form-control" id="passwordUsuarioRegistrar" name ="passwordUsuarioRegistrar"required>
                <div id="mensajePassword" class="form-text">Su contraseña debe tener entre 8 y 20 caracteres, contener letras y números, y no debe contener espacios, caracteres especiales ni emoji.</div>
              </div>   
            </div>
            <div class="row mt-3">
              <div class="col-12">
                 <label for="imgUsuarioRegistrar" class="form-label">Insertar una imagen (Archivos sólo JPG, PNG, JPEG)</label>
-                <input class="form-control" type="file" id="imgUsuarioRegistrar" name="" required>
+                <input class="form-control" type="file" id="imgUsuarioRegistrar" name="imagenUsuario" required>
             </div>  
            </div>
            <div class="row mt-3">
@@ -154,6 +155,7 @@
                   <button type="submit" id ="btnRegistrarModal"class="btn">Registrarse</button>
               </div>
            </div>
+
         </form>
       </div>
     </div>

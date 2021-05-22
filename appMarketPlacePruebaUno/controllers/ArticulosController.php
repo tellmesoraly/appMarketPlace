@@ -27,5 +27,10 @@ class ArticulosController {
 		$result = ArticulosModelo::listarArticulosPorUsuarioModel($idUsuario);
 		return $result;
 	}
+
+	static public function mostrarDetalles ($idArticulo){
+		$result = ArticulosModelo::mostrarDetallesModel ($idArticulo);
+		return $result;
+	}
 }
 

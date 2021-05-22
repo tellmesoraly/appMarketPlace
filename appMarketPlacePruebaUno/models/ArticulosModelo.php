@@ -68,4 +68,27 @@
  		$resultado = $conexion->query($sql);
  		return $resultado;
 	}
+
+	static public function InsertarArticuloModelo($_titulo, $_precio, $_categoria, $_estado,$_disponibilidad, $_descripcion, $rutaDestino, $_idUsuario) {
+
+		$conexion = Conexion::conectar();
+ 		$sql = "INSERT INTO articulos VALUES (null, '$_titulo', $_precio, $_estado, $_disponibilidad, '$_descripcion', NOW(), $_idUsuario, $_categoria, '$rutaDestino') 
+			";
+ 		$resultado = $conexion->query($sql);
+ 		return $resultado;
+	}
+
+	static public function mostrarDetallesModel ($idArticulo) {
+
+		$conexion = Conexion::conectar();
+		$sql = "SELECT a.idArticulo, a.tituloArticulo, a.fechaPublicacionArticulo, a.precioArticulo, a.disponibilidadArticulo, c.nombreCategoria, a.estadoArticulo, a.descripcionArticulo, u.imgUsuario, CONCAT(u.nombreUsuario,' ', u.apellidoUsuario) as Datos, u.correoUsuario, a.imgArticulo
+			FROM articulos a
+			INNER JOIN categorias c
+			ON a.idCategoria = c.idCategoria
+			INNER JOIN usuarios u
+			ON a.idUsuario = u.idUsuario
+			WHERE a.idArticulo = $idArticulo";
+		$resultado = $conexion->query($sql);
+ 		return $resultado;
+	}
  }

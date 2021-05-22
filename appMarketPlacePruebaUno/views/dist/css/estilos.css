@@ -1,0 +1,80 @@
+.navbar {
+	background:#0c0a19;
+}
+
+
+
+.card img {
+	height: 200px;
+	object-fit: cover;
+}
+
+.disponibilidadArticulo {
+	position: absolute;
+	right: 0;
+	background: rgba(255, 255, 255, 0.7);
+	padding: 3px;
+}
+
+.disponible {
+	color: #17ad70;
+	font-weight: bold;
+}
+
+.agotado {
+	color: red;
+	font-weight: bold;
+}
+
+#btnIngresar, #btnRegistrar, #btnBuscar, #verDetalles, 
+#btnBuscar, #btnIngresarModal, #btnMenuDesplegable, 
+#btnCrearPublicacion, #btnCrearArticulo, #btnRegistrarModal{
+	background: #493c60;
+	color: white;
+}
+
+#imagenN {
+	height: 200px;
+	object-fit: cover;
+}
+
+/*.titulos {
+	display: inline-block;
+	vertical-align: middle;
+}*/
+.zzz h6 {
+	display:inline;
+}
+
+#imgVendedor {
+	height: 150px;
+	object-fit: cover;
+}
+
+.vendedor {
+	overflow: hidden;
+}
+
+.imgV {
+	float: left;
+} 
+
+.contacto {
+	float: left;
+	margin-left: 30px;
+}
+
+#volverIndex {
+
+	text-decoration: none;
+	background: #493c60;
+	color: white;
+	padding: 10px 10px;
+	border: 1px solid #493c60;
+	border-radius: 5px;
+}
+
+#estado {
+	margin-left: 10px;
+	margin-bottom: 10px;
+}

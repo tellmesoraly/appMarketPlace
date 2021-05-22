@@ -87,6 +87,9 @@
 
 	<?php require 'views/modales.php'; ?> <!-- CON ESTE REQUIRE, TENGO TODOS LOS ARCHIVOS DE LOS MODALES, ENTONCES SIN ESTO, LOS MODALES NO ME ABRIRÍAN, OJO PELAO AHÍ -->
 	<script src="dist/js/bootstrap.bundle.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="dist/js/insertarArticulo.js"></script>
+
 </body>
 </html>
 

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <base href="views/">
+  <link rel="icon" href="https://st2.depositphotos.com/4060975/8907/v/600/depositphotos_89075918-stock-illustration-marketplace-colored-vector-illustration.jpg">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MarketPlace - Compra y vende.</title>
@@ -43,7 +44,7 @@
               <option value="desc">Ordenar de mayor precio</option>
             </select>
             <div class="d-grid mt-2">
-              <button type="submit" id ="btnBuscar"class="btn" ><i class="fas fa-search"></i> Buscar</button>
+              <button type="submit" id ="btnBuscar" class="btn" ><i class="fas fa-search"></i> Buscar</button>
             </div>
           </form>
   			</div> <!-- hasta aquí -->
@@ -101,7 +102,7 @@
                     <p mb-0> $'. number_format($fila[2], 0, ",",".") .'</p>
                     <p mb-0> '. $fila[5] .' </p>
                     <div class="d-grid">
-                      <a href="#" id ="verDetalles"class="btn">Ver detalles</a>
+                      <a href="detalles-publicacion.php?$idArticulo= <?php echo ; ?> " id ="verDetalles" class="btn">Ver detalles</a>
                      </div>
                      
                     </div>
@@ -117,9 +118,12 @@
   	</div>
 
 
-<?php require 'modales.php'; ?>
+<?php require_once 'modales.php'; ?>
 
         <script type="text/javascript" src="dist/js/bootstrap.bundle.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script type="text/javascript" src="dist/js/login.js"></script> <!-- archivo para que el usuario se pueda logear -->
+        <script type="text/javascript" src="dist/js/registrarUsuario.js"></script>
+
 </body>
 </html>
